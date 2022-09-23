@@ -8,7 +8,7 @@ const Timer = () => {
 
 
     useEffect(() => {
-        if (timerOn) {
+        if (timerOn && duration > 0) {
             setDuration(duration)
             const intervalId = setInterval(() => {
                 setDuration(duration - 1)
